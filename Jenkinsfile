@@ -6,6 +6,7 @@ pipeline{
                 script{
                     sh'''
                     ls -l
+                    echo Lol
                     '''
                 }
             }
