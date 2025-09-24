@@ -6,9 +6,15 @@ pipeline{
                 script{
                     sh'''
                     docker compose up -d
+                    docker compose down
                     '''
                 }
             }
+        }
+    }
+    post {
+        always{
+            cleanWs()
         }
     }
 }
